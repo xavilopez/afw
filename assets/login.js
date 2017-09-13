@@ -4,6 +4,7 @@ $(document).ready(function() {
   var animating = false,
       submitPhase1 = 1100,
       submitPhase2 = 400,
+      submitPhase3 = 2500,
       logoutPhase1 = 800,
       $login = $(".login"),
       $app = $(".app");
@@ -20,25 +21,36 @@ $(document).ready(function() {
   };
 
   $(document).on("click", ".login__submit", function(e) {
-    if (animating) return;
-    animating = true;
-    var that = this;
-    ripple($(that), e);
-    $(that).addClass("processing");
-    setTimeout(function() {
-      $(that).addClass("success");
+    if ($("#user-name").val() == "admin" && $("#user-pass").val() == "afw2017") {
+      if (animating) return;
+      animating = true;
+      var that = this;
+      ripple($(that), e);
+      $(that).addClass("processing");
       setTimeout(function() {
-        $app.show();
-        $app.css("top");
-        $app.addClass("active");
-      }, submitPhase2 - 70);
-      setTimeout(function() {
-        $login.hide();
-        $login.addClass("inactive");
-        animating = false;
-        $(that).removeClass("success processing");
-      }, submitPhase2);
-    }, submitPhase1);
+        $(that).addClass("success");
+        setTimeout(function() {
+          $app.show();
+          $app.css("top");
+          $app.addClass("active");
+        }, submitPhase2 - 70);
+        setTimeout(function() {
+          $login.hide();
+          $login.addClass("inactive");
+          animating = false;
+          $(that).removeClass("success processing");
+        }, submitPhase2);
+      }, submitPhase1);
+      setTimeout(function(){
+        window.location.href='main.html'
+      }, submitPhase3);
+    }
+    else {
+      $("#user-name").val('');
+      $("#user-pass").val('');
+    }
+
+
   });
 
   $(document).on("click", ".app__logout", function(e) {
