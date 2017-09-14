@@ -54,13 +54,14 @@ input, button {
   width: 30rem;
   height: 53rem;
   overflow: hidden;*/
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .login {
   position: relative;
   height: 100%;
+  width: 100%;
   background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
@@ -77,8 +78,8 @@ input, button {
 }
 .login__check {
   position: absolute;
-  top: 30rem;
-  left: 23rem;
+  top: 20%;
+  left: 45%;
   width: 14rem;
   height: 2.8rem;
   background: #fff;

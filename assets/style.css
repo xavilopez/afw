@@ -34,12 +34,66 @@ a:hover{
   position: relative;
   width: 50%;
   height: 100pt;
+  padding: 0;
 }
 .header-tile div{
-  margin-top: 45pt;
+  margin-top: 38pt;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
+.tile-texture{
+  position: absolute;
+  height: 30pt;
+  width: 100%;
+}
+.darker-color{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 30pt;
+  width: 15%;
+}
+.texture-produccion{
+  background-color: rgba(255,244,40, 0.5);
+}
+.darker-produccion{
+  background-color: rgba(219,207,0, 0.5);
+}
+.texture-administracion{
+  background-color: rgba(193,255,116, 1);
+}
+.darker-administracion{
+  background-color: rgba(159,255,40, 1);
+}
+.texture-creatividad{
+  background-color: rgba(205,137,137, 0.5);
+}
+.darker-creatividad{
+  background-color: rgba(182,83,83, 0.5);
+}
+.texture-prensa{
+  background-color: rgba(115,199,226, 0.5);
+}
+.darker-prensa{
+  background-color: rgba(52,174,213, 0.5);
+}
+.texture-comercial{
+  background-color: rgba(204,156,231, 0.5);
+}
+.darker-comercial{
+  background-color: rgba(172,94,216, 0.5);
+}
+.texture-logout{
+  background-color: rgba(139,139,139, 0.5);
+}
+.darker-logout{
+  background-color: rgba(100,100,100, 0.5);
+}
+.white-text{
+}
+.opt-tile{
+  top: 60pt;
+}
+
 .header-producción{
   background-color: #FFFCC0;
 }
@@ -170,6 +224,9 @@ a:hover{
   animation-name: material-design-hamburger__icon--slide-after-from;
 }
 
+
+
+
 @keyframes material-design-hamburger__icon--slide {
   0% {
   }
@@ -226,6 +283,12 @@ a:hover{
   }
 }
 
+
+
+.div-expand{
+  height: 300pt;
+  overflow-y: scroll;
+}
 /*--  Response  -- */
 @media only screen and (max-width:667px) {
   td.fontSmall {

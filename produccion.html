@@ -17,6 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="assets/jquery-ui.css">
 
 <link href="assets/style.css" rel="stylesheet" type="text/css"/>
 
@@ -39,7 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<a href="creativa.html"><div class="col-xs-6 header-tile header-creatividad"><div>CREATIVIDAD</div></div></a>
 			<a href="prensa.html"><div class="col-xs-6 header-tile header-prensa"><div>PRENSA</div></div></a>
 			<a href="comercial.html"><div class="col-xs-6 header-tile header-comercial"><div>COMERCIAL</div></div></a>
-			<a href="index.html"><div class="col-xs-6 header-tile header-logout"><div>SALIR</div></div></a>
+			<a href="diseño.html"><div class="col-xs-6 header-tile header-logout"><div>DISEÑO GRÁFICO</div></div></a>
     </section>
 	</div>
 	<!-- banner-->
@@ -133,9 +134,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</td>
 							</tr>
 							<tr>
-								<td class="scale-center w3p-text" style="font-family: 'Proxima N W01 At Reg', Helvetica, Arial, sans-serif; font-size: 16px; color: #999; line-height: 30px; text-align: center; font-weight: 100;" data-color="Header Subline" data-size="Header Subline" data-max-"24">Consectetur adipiscing elit. Aenean consequat lacus ac turpis ullamcorper, ut ornare libero euismod. Mauris urna eros, tempus id eros vitae, accumsan tempor ligula.</td>
-							</tr>
-							<tr>
 								<td class="abt-pad" height="50">&nbsp;</td>
 							</tr>
 							<tr>
@@ -143,7 +141,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<table align="center" border="0" cellpadding="0" cellspacing="0" width="200">
 										<tbody><tr>
 											<td style="text-align: center; font-family: 'Proxima N W01 At Reg', Helvetica, Arial, sans-serif; color: rgb(255, 255, 255);">
-											<a href="#" class="wthree-more" style="text-decoration: none;color:black;padding:15px 35px; background-color: #FFFCC0;display: inline-block;">Learn More</a></td>
+											<a href="#" class="wthree-more" data-toggle="modal" data-target="#myModal" style="text-decoration: none;color:black;padding:15px 35px; background-color: #FFFCC0;display: inline-block;">Saber Más</a></td>
 										</tr>
 									</tbody></table>
 								</td>
@@ -180,22 +178,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</table>
 								</td>
 							</tr>
-							<tr>
-								<td class="scale-center w3p-text" style="font-family: 'Proxima N W01 At Reg', Helvetica, Arial, sans-serif; font-size: 16px; color: #999; line-height: 30px; text-align: center; font-weight: 100;" data-color="Header Subline" data-size="Header Subline" data-max-"24">Consectetur adipiscing elit. Aenean consequat lacus ac turpis ullamcorper, ut ornare libero euismod. Mauris urna eros, tempus id eros vitae, accumsan tempor ligula.</td>
-							</tr>
-							<tr>
-								<td class="abt-pad" height="50">&nbsp;</td>
-							</tr>
-							<tr>
-								<td height="20">
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="200">
-										<tbody><tr>
-											<td style="text-align: center; font-family: 'Proxima N W01 At Reg', Helvetica, Arial, sans-serif; color: rgb(255, 255, 255);">
-											<a href="#" class="wthree-more" style="text-decoration: none;color:black;padding:15px 35px; background-color: #FFFCC0;display: inline-block;">Learn More</a></td>
-										</tr>
-									</tbody></table>
-								</td>
-							</tr>
+
 							<tr>
 								<td class="abt-pad" height="60">&nbsp;</td>
 							</tr>
@@ -205,8 +188,150 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</tr>
 		</tbody>
 	</table>
+  <div id="accordion" class="opt-container">
+    <h3>Casting de modelos</h3>
+    <div class="div-expand">
+      <p>•	Se convoca a todas las agencias más importantes para el casting de modelos teniendo en cuenta el perfil de modelos al que apunta el evento.</p>
+      <p>•	Se realiza la comunicación del día y horario del casting, se debe realizar un día completo para lograr la mayor convocatoria posible. Tener en cuenta si hay casting de otros eventos el mismo día.</p>
+      <p>•	El casting debe realizarse dos meses antes del evento.</p>
+      <p>•	Las modelos deben ir vestidas con vestido negro básico, cabello natural y maquillaje natural.</p>
+      <p>•	Los modelos deben ir vestidos con remera básica negra y jeans.</p>
+      <p>•	Se debe elaborar una planilla con todos los datos de los modelos como: Nombre y apellido, edad, agencia, altura, medidas, calce, disponibilidad de horario, esto debe ir adjunto a una foto de cuerpo completo y rostro del modelo.</p>
+      <p>•	La altura, las medidas y las fotos se deben tomar en el casting.</p>
+      <p>•	Dependiendo de la cantidad de marcas en la grilla se fija un total de modelos, se requiere un total de 30 a 40 modelos aproximadamente.</p>
+    </div>
+    <h3>Selección de modelos</h3>
+    <div class="div-expand">
+      <p>•	La altura mínima requerida para las mujeres es de 1,75 metros y para los hombres de 1,80 metros.</p>
+      <p>•	Se debe tener en cuenta el perfil de los modelos que van a participar.</p>
+      <p>•	Una vez que son seleccionados, los modelos deben firmar una orden de trabajo donde estipulen las clausulas a tener en cuenta: deben llegar a tiempo a los ensayos y pruebas de vestuario, deben cuidar su imagen y reputación, cumplir con los requisitos de cuidados personales, estar presentes en todas las actividades en la semana del evento, ser responsables y respetar a las demás personas que trabajaran con ellos dentro del backstage, una vez que han sido seleccionados para formar parte del staff del AFW no deberán participar de otros eventos durante la semana que dure el mismo, los modelos no podrán seleccionar la cantidad de marcas que desfilaran, todos los modelos deberán ser informados previamente del modo de pago ya sea en canje o efectivo como lo estipule Coordinación General.</p>
+    </div>
+
+    <h3>Coordinación de modelos y diseñadores para programas televisivos y radiales.</h3>
+    <div class="div-expand">
+      <p>•	Calendarizar dos semanas antes del evento con el Jefe de Prensa los programas de TV y radiales.</p>
+      <p>•	Coordinar la cantidad de personas que deben ir, eso incluye a diseñadores y modelos si fuese necesario, para esto se debe coordinar con los diseñadores para armar un look completo de la marca según el modelo asignado.</p>
+      <p>•	Las modelos y diseñadores se podrán maquillar en el estudio de TV.</p>
+    </div>
+
+    <h3>Entrevista con diseñadores</h3>
+    <div class="div-expand">
+      <p>•	Fijar entrevistas un mes antes con los diseñadores según orden de la grilla. </p>
+      <p>•	Se debe entregar la lista de modelos asignada, los cambios que se pueden realizar son mínimos.</p>
+      <p style="font-weight:bold">Tener en cuenta los siguientes puntos a tratar con los diseñadores:</p>
+      <p>•	Facilitar a la organización un mes antes el material siguiente: biografía, líneas de su colección, dibujos y datos de su staff de prensa.</p>
+      <p>•	Informar debidamente a la Organización, con un mes de antelación, de su proyecto de desfile en cuanto a sonido, iluminación y coreografía, así como de modelos a contratar por su cuenta, si fuera el caso.</p>
+      <p>•	Seguir fielmente las instrucciones de la Organización en cuanto a los horarios de entrada y salida de colección y pruebas.</p>
+      <p>•	Estos horarios se facilitarán por escrito al diseñador con una antelación mínima de 5 días a la fecha del desfile.</p>
+      <p>•	Asegurar su mercancía debidamente contra hurto, incendio, robo y responsabilidad civil durante el período de permanencia de la misma en las instalaciones.</p>
+      <p>•	Someter a la aprobación de la organización, con una antelación mínima de 30 días a la fecha del desfile, su proyecto de escenario, si lo hubiere, que deberá ser supervisado incluyendo el desmontaje.</p>
+      <p>•	Fijar pruebas de vestuario 15 días antes del desfile, posterior a la entrega de la lista de modelos asignada. </p>
+      <p>•	El diseñadores debe entregar la grabación de la música de su desfile en CD (original o copia)</p>
+      <p>•	Duración máxima desfile: (25 min. en desfile individual – 15 min. en doble)</p>
+      <p style="font-weight:bold">Se les proporcionara a todos los diseñadores que participen la infraestructura siguiente:</p>
+      <p>•	Modelos</p>
+      <p>•	Maquilla y peluquería</p>
+      <p>•	Video</p>
+      <p>•	Invitaciones al desfile</p>
+      <p>•	Promoción de su participación en la fan page y otros soportes</p>
+    </div>
+
+    <h3>Ensayo de pasarela</h3>
+    <div class="div-expand">
+      <p>•	Los ensayos de pasarela deben empezar 15 días antes del evento.</p>
+      <p>•	Pautar en horarios y días donde la mayoría de los modelos estén disponibles. En la primera semana se pueden realizar 2 0 3 ensayos y en la segunda semana 3 o 4 veces según sea necesario. </p>
+      <p>•	Coordinar con los diseñadores ensayos de coreografías especiales durante las dos semanas disponibles para ensayos.</p>
+      <p>•	Las modelos deben ir con tacos altos.</p>
+      <p>•	Deben tener una duración de una hora u hora y media.</p>
+
+    </div>
+
+    <h3>Prueba de maquillaje y peinado</h3>
+    <div class="div-expand">
+      <p>•	Coordinar con los diseñadores prueba de maquillaje y peinado si fuese necesario, tres semanas antes del desfile.</p>
+      <p>•	Calendarizar las pruebas con los encargados de maquillaje y peinado.</p>
+      <p>•	Para ambas pruebas fijar horario y día con los modelos que cuenten con disponibilidad de horario.</p>
+      <p>•	El diseñador debe llevar las referencias impresas en A3.</p>
+    </div>
+
+    <h3>Distribución de modelos por marca</h3>
+    <div class="div-expand">
+      <p>•	Una vez realizada la selección de modelos, se distribuye equitativamente a cada marca.</p>
+      <p>•	Presentar la lista impresa a cada diseñador en la primera reunión.</p>
+      <p>•	Enviar las listas de modelos a cada diseñador por mail.</p>
+      <p>•	 Los cambios dentro de la lista de modelos de cada diseñador pueden ser mínimas.</p>
+      <p>•	Posteriormente a la aprobación del diseñador se fija día y horario de prueba de vestuario.</p>
+      <p>•	Entregar a cada modelo la lista impresa de sus marcas asignadas con los datos de pruebas de vestuario, dirección, número de contacto,  días y horarios.</p>
+    </div>
+
+    <h3>Coordinación de prueba de vestuario</h3>
+    <div class="div-expand">
+      <p>•	Las pruebas de vestuario se fijan un mes antes del evento y se pueden realizar hasta una semana antes del desfile.</p>
+      <p>•	Los horarios y días deberán ser flexibles y con un lapso de tiempo prolongado para que todos los modelos lleguen a cada prueba estipulada.</p>
+      <p>•	Las modelos deben ir con tacos altos a todas las pruebas de vestuario por sobre todo a marcas de alta costura. </p>
+      <p>•	Realizar seguimiento a cada marca con los encargados o diseñadores sobre la prueba de vestuario para evitar inconvenientes posteriores.</p>
+      <p>•	Aquellos modelos que no asisten a tiempo y forma a las pruebas de vestuario serán sancionados.</p>
+      <p>•	Las pruebas de vestuario no deberán de durar más de una hora</p>
+    </div>
+
+    <h3>Convocatoria de modelos a la conferencia de prensa</h3>
+    <div class="div-expand">
+      <p>•	Informar al staff de modelos una semana antes del lanzamiento del evento, teniendo en cuenta la tenida, horario y fecha.</p>
+      <p>•	Unificar vestimenta para la ocasión, maquillaje suave y peinado natural</p>
+    </div>
+
+    <h3>Coordinación de backstage durante el evento</h3>
+    <div class="div-expand">
+      <p>•	Elaborar una lista de las personas que trabajaran en peluquería y maquillaje.</p>
+      <p>•	Elaborar una lista de personas que podrán acreditarse, la misma debe estar actualizada para cada día del evento. Tener en cuenta que cada diseñador puede acreditar hasta 5 personas como asistentes.</p>
+      <p>•	Asignar una persona encargada de maquillaje y peluquería que deberá tener una planilla con el listado de modelos, horario del desfile, número de teléfono y dos espacios para marcar si se encuentran peinadas y maquilladas.</p>
+      <p>•	Fijar horario de entrada y salida con los equipos de maquillaje y peluquería.</p>
+      <p>•	Acreditar en la entrada del backstage a las personas encargadas de maquillaje, peluquería y modelos el primer día del evento.</p>
+      <p>•	Queda prohibida la entrada a personas que no tengan credenciales o no estén acreditadas previamente.</p>
+      <p>•	Coordinar espacio guormet, el mismo deberá contar con un área de descanso que deberá estar apartada del sector de desfiles, en acreditaciones se le proveerá a cada persona dos tickets de comida y bebida por día que dure el evento.</p>
+      <p>•	Dentro del espacio gourmet habrá 4 personas encargadas de servir las comidas y bebidas.</p>
+      <p>•	Está prohibido comer o tomar con la ropa de desfile.</p>
+      <p>•	Los alimentos se limitaran únicamente dentro del área de descanso.</p>
+      <p>•	Habilitar un espacio de casilleros para que se puedan dejar con seguridad las pertenencias, en este espacio deberá estar una persona encargada de tomar los datos en una planilla para mejor control.</p>
+      <p>•	Los modelos deben llegar tres horas antes del inicio del desfile asignado.</p>
+      <p>•	Un día antes del evento recordar a cada modelo que deben estar con las manos y pies hechas sin esmaltes de color, cabello limpio, depiladas, deberán llevar ropa interior color piel, dos pares de zapatos negros y/o nude, presentarse a tiempo y respetar a las demás personas con las que trabajaran durante todo el evento.</p>
+      <p>•	La organización contara con 5 personas asignadas como asistentes de producción que darán soporte a las modelos y diseñadores, se encargaran de armar la lista de pasadas para cada desfile.</p>
+      <p>•	La coordinadora del backstage es la encargada de entregar cada desfile a tiempo con las modelos listas para empezar el desfile.</p>
+    </div>
+
+  </div>
 	<!-- //about -->
 
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header header-producción">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Producción General</h4>
+      </div>
+      <div class="modal-body">
+        <p>•	Presupuesto tentativo de egresos</p>
+        <p>•	Definición del lugar</p>
+        <p>•	Definición de fechas </p>
+        <p>•	Definir grilla de diseñadores</p>
+        <p>•	Selección de proveedores </p>
+        <p>•	Lay- Out </p>
+        <p>•	Base de datos VIP </p>
+        <p>•	Desarrollo del programa del evento </p>
+        <p>•	Presupuesto destinado a modelos </p>
+        <p>•	Montaje en general </p>
+        <p>•	Coordinación del lanzamiento y conferencia de prensa</p>
+
+      </div>
+      <div class="modal-footer header-producción">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 
@@ -249,7 +374,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<tbody>
 											<tr>
 												<td class="textCenter" height="60" style="text-align: right;" valign="middle">
-													<a href="main.html" class="w3logo" style="font-size:2.8em;color:#fff;text-decoration:none;font-family:Calibri,serif;">Staff App</a>
+  													<a href="index.html" class="w3logo" style="font-size:2.8em;color:#fff;text-decoration:none;font-family:Calibri,serif;">Salir</a>
 												</td>
 											</tr>
 											<tr>
@@ -304,5 +429,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 })();
   </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/login.js" type="text/javascript"></script>
+
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
 </body>
 </html>

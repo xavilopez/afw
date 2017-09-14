@@ -72,4 +72,7 @@ $(document).ready(function() {
     }, logoutPhase1);
   });
 
+  $(document).on("click", "#moreOpt", function(e) {
+    $("#accordion").addClass('display-block');
+  });
 });
